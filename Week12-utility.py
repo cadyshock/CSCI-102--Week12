@@ -10,6 +10,13 @@ def LoadFile(file):
     for i in f:
         final.append(i)
     return final
+def UpdateString(st1,st2,x):
+    slist=list(st1)
+    new=''
+    slist[x]=st2
+    for i in slist:
+        new+=i
+    return new
 
 
 
