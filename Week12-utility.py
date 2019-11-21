@@ -33,6 +33,16 @@ def ScoreFinder(lis1,lis2,string):
         print('OUTPUT %s got a score of %d' % (player,score))
     except:
         print('OUTPUT player not found')
+def Union(lis1,lis2):
+    for i in lis1:
+        for item in lis2:
+            if i == item:
+                while lis1.count(i) > 0:
+                    lis1.remove(i)
+    lis3=lis1+lis2
+    return lis3
+
+
 
 
 
