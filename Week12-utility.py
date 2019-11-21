@@ -23,6 +23,16 @@ def FindWordCount(lis,string):
         if i == string:
             count=count+1
     return count
+def ScoreFinder(lis1,lis2,string):
+    for i in lis1:
+        if i.lower() == string:
+            player_number=lis1.index(i)
+    try:
+        score=lis2[player_number]
+        player=lis1[player_number]
+        print('OUTPUT %s got a score of %d' % (player,score))
+    except:
+        print('OUTPUT player not found')
 
 
 
