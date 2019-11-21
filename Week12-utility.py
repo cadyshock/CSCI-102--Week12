@@ -41,6 +41,14 @@ def Union(lis1,lis2):
                     lis1.remove(i)
     lis3=lis1+lis2
     return lis3
+def Intersection(lis1,lis2):
+    repeat=[]
+    for i in lis1:
+        for item in lis2:
+            if i == item:
+                repeat.append(i)
+    return repeat
+
 
 
 
