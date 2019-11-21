@@ -48,6 +48,15 @@ def Intersection(lis1,lis2):
             if i == item:
                 repeat.append(i)
     return repeat
+def NotIn(lis1,lis2):
+    for i in lis1:
+        print (i)
+        for item in lis2:
+            print('d',item)
+            if i == item:
+                while lis2.count(i) > 0:
+                    lis2.remove(i)
+    return lis2
 
 
 
