@@ -4,6 +4,15 @@
 
 def PrintOutput(string):
     print( 'OUTPUT ' + string)
+def LoadFile(file):
+    f=open(file,'r')
+    final=[]
+    for i in f:
+        final.append(i)
+    return final
+
+
+
 
             
     
