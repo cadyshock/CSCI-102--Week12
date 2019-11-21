@@ -17,6 +17,13 @@ def UpdateString(st1,st2,x):
     for i in slist:
         new+=i
     return new
+def FindWordCount(lis,string):
+    count=0
+    for i in lis:
+        if i == string:
+            count=count+1
+    return count
+
 
 
 
